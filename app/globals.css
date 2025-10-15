@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-950 text-gray-100 font-sans antialiased;
+}
+
+a {
+  @apply text-midnight-400 underline-offset-4 transition hover:underline;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-midnight-600 rounded-full;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
